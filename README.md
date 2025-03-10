@@ -1,3 +1,3 @@
-# grpc_demo
+# Intro til gRPC og Protobuf
 
-Repo for Intro til gRPC og Protobuf
+TODO
