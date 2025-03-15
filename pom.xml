@@ -46,6 +46,11 @@
         <version>${grpc.kotlin.version}</version>
       </dependency>
       <dependency>
+        <groupId>io.grpc</groupId>
+        <artifactId>grpc-netty-shaded</artifactId>
+        <version>${grpc.version}</version>
+      </dependency>
+      <dependency>
         <groupId>javax.annotation</groupId>
         <artifactId>javax.annotation-api</artifactId>
         <version>${javax.annotation}</version>
@@ -73,6 +78,10 @@
     <dependency>
       <groupId>io.grpc</groupId>
       <artifactId>grpc-kotlin-stub</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-netty-shaded</artifactId>
     </dependency>
     <dependency>
       <groupId>javax.annotation</groupId>
@@ -104,6 +113,11 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <groupId>io.github.ascopes</groupId>
+          <artifactId>protobuf-maven-plugin</artifactId>
+          <version>2.12.1</version>
         </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
