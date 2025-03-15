@@ -1,6 +1,12 @@
-package no.proto.server
+package no.proto.poc
 
 import io.grpc.ServerBuilder
+
+fun main() {
+    val server = GreeterServer(8080)
+    server.start()
+    server.blockUntilShutdown()
+}
 
 class GreeterServer(private val port: Int) {
 
@@ -28,10 +34,4 @@ class GreeterServer(private val port: Int) {
         server.awaitTermination()
     }
 
-}
-
-fun main() {
-    val server = GreeterServer(8080)
-    server.start()
-    server.blockUntilShutdown()
 }

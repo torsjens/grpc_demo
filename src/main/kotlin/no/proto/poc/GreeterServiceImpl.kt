@@ -1,4 +1,4 @@
-package no.proto.server
+package no.proto.poc
 
 import no.proto.generated.GreeterServiceGrpcKt
 import no.proto.generated.HelloRequest
