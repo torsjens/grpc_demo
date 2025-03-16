@@ -129,41 +129,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>io.github.ascopes</groupId>
-        <artifactId>protobuf-maven-plugin</artifactId>
-
-        <configuration>
-          <kotlinEnabled>true</kotlinEnabled>
-          <protocVersion>${protobuf.version}</protocVersion>
-          <sourceDirectories>
-            <sourceDirectory>src/main/resources/proto</sourceDirectory>
-          </sourceDirectories>
-          <binaryMavenPlugins>
-            <binaryMavenPlugin>
-              <groupId>io.grpc</groupId>
-              <artifactId>protoc-gen-grpc-java</artifactId>
-              <version>${grpc.version}</version>
-            </binaryMavenPlugin>
-          </binaryMavenPlugins>
-          <jvmMavenPlugins>
-            <jvmMavenPlugin>
-              <groupId>io.grpc</groupId>
-              <artifactId>protoc-gen-grpc-kotlin</artifactId>
-              <version>${grpc.kotlin.version}</version>
-              <classifier>jdk8</classifier>
-            </jvmMavenPlugin>
-          </jvmMavenPlugins>
-        </configuration>
-
-        <executions>
-          <execution>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
 
   </build>
