@@ -1,3 +1,8 @@
-# Intro til gRPC og Protobuf
+# gRPC og Protobuf demo
 
-TODO
+Bygg med maven:
+`mvn clean install`
+
+Start server: `GreeterServer` 
+
+Kjør klient: `GreeterClient`
